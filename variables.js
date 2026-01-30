@@ -41,4 +41,9 @@ console.log(10 != '10');
 // distinto que estricto
 console.log(10 !== '10');
 
+console.log(valor1 + 2);
+valor1 = valor1 + 3;
+console.log(valor1);
 
+valor1 += 3; //valor1 = valor1 +3
+console.log(valor1);
