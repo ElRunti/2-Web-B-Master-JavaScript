@@ -28,8 +28,8 @@ const disco ={
         console.log(`Cancion agregada ${nombre}`);
     },
     //eliminar cancion
-    eliminarCancion(nombre){
-        this.canciones.pop(nombre);
+    eliminarCancion(){
+        this.canciones.pop();
         console.log("Cancion eliminada")
     },
     cambiarEstadoDisco(){
@@ -42,6 +42,7 @@ const disco ={
         }
     }
 }
+disco.eliminarCancion();
 // Acceder a datos con la notacion de punto
 console.log(disco.artista);
 console.log(disco.canciones);
