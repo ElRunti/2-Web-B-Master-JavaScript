@@ -7,12 +7,14 @@ const texto = document.getElementById("texto");
 const caja = document.getElementById("caja");
     console.log(caja);
 
+const btnClase = document.getElementById("btn-clase")
+
 const btnTexto = document.getElementById("btn-texto")
 const btnColor = document.getElementById("btn-color")
 const btnOcultar = document.getElementById("btn-ocultar")
 
 // Cambiar texto
-
+// El evendo addEventoListener esta escuchando ... que haga click
 btnTexto.addEventListener("click",() =>{
     titulo.textContent = 'Cambiaste el texto desde javascript'
 });
@@ -32,3 +34,15 @@ btnOcultar.addEventListener("click", () => {
         caja.style.display = "none";
     }
 })
+
+
+btnClase.addEventListener("click",() =>{
+    caja.classList.toggle("activa");// cambia el estado visual
+});
+
+const comentario = document.getElementById("btn-enviar");
+
+
+comentario.addEventListener("click", () =>{
+    
+});
